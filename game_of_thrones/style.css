@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
+:root {
+  --bg-color: #ffcc66;
+  --headerfooter-color: #333333;
+  --primary-color: #66d9cc;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,8 +16,11 @@
   list-style: none;
 }
 
+body {
+  background-color: #ffcc66;
+}
+
 header {
-  border: 1px solid red;
   min-width: 100%;
   min-height: 20vh;
   display: flex;
@@ -17,26 +28,80 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1em;
+  background: linear-gradient(
+    180deg,
+    rgba(51, 51, 51, 1) 85%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  h1 {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    color: var(--headerfooter-color);
+    filter: drop-shadow(0px 0px 1.5px var(--bg-color));
+  }
 
   select {
     height: 2em;
     width: auto;
     text-align: center;
-    font-weight: 600;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid var(--bg-color);
+    color: var(--bg-color);
+    background-color: var(--headerfooter-color);
   }
 }
 
 main {
-  border: 1px solid blue;
+  background-color: var(--bg-color);
   height: 70vh;
   width: 100%;
+  padding: 1em;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
 
+  img {
+    width: 15em;
+    height: auto;
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 10px #0009);
+  }
+}
+
+#character-fullname,
+#character-title,
+#character-family {
+  font-family: "Cinzel", serif;
+}
+
+#character-fullname {
+  font-size: 2em;
+}
+
+#character-title {
+  font-style: italic;
+}
+
+#character-family {
+  font-weight: bold;
+  text-decoration:underline;
 }
 
 footer {
   min-width: 100%;
   min-height: 10vh;
-  border: 1px solid green;
+  background-color: var(--headerfooter-color);
+  color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 1) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
