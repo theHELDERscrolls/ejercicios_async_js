@@ -17,8 +17,11 @@
 }
 
 body {
-  background-color: #ffcc66;
+  background: 
+    url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png"),
+    #ffcc66;
 }
+
 
 header {
   min-width: 100%;
@@ -54,7 +57,6 @@ header {
 }
 
 main {
-  background-color: var(--bg-color);
   height: 70vh;
   width: 100%;
   padding: 1em;
@@ -88,7 +90,7 @@ main {
 
 #character-family {
   font-weight: bold;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 footer {
